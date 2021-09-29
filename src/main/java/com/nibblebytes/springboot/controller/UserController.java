@@ -2,18 +2,14 @@ package com.nibblebytes.springboot.controller;
 
 import com.nibblebytes.springboot.entity.User;
 import com.nibblebytes.springboot.repository.UserRepository;
-import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
-@Api(value = "User Rest Controller", description = "REST API for User")
 @RequestMapping("/api/user")
-@EnableSwagger2
 @RestController
 public class UserController {
 
